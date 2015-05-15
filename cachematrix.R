@@ -1,5 +1,12 @@
-## Put comments here that give an overall description of what your
-## functions do
+## These two functions implement a cached/memorized/memoized
+## calculation of the inverse of a matrix. The matrix has to be
+## created with makeCacheMatrix (e.g. x <-
+## makeCacheMatrix(makeCacheMatrix(matrix(rnorm(9),c(3,3))))).
+## cacheSolve(x) then calculates the inverse of this matrix and saves
+## the calculated value, so it can be retrieved the next time without
+## calculation. If we have already called cacheSolve(x), and the
+## matrix has not changed in the meantime, a memorized/cached version
+## of the inverse will be returned.
 
 ## This function returns a list of functions used to manage the matrix
 ## content and the memorized inverse of the matrix
